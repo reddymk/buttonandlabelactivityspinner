@@ -79,3 +79,6 @@ Run the following command:
 $ pod install
 
 ```
+
+# Author #
+### Manish Reddy ###
