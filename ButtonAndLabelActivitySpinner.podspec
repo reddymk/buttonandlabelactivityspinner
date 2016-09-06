@@ -6,7 +6,7 @@ s.name = "ButtonAndLabelActivitySpinner"
 s.summary = "Button and Label with Activity Spinner"
 s.requires_arc = true
 
-s.version = "0.1.0"
+s.version = "0.1.1"
 
 s.license = { :type => "MIT", :file => "LICENSE" }
 
@@ -16,6 +16,7 @@ s.homepage = "https://bitbucket.org/reddymk/buttonandlabelactivityspinner"
 
 s.source = { :git => "https://bitbucket.org/reddymk/buttonandlabelactivityspinner.git", :tag => "#{s.version}"}
 
+s.documentation_url = "https://bitbucket.org/reddymk/buttonandlabelactivityspinner"
 
 s.source_files = "ButtonAndLabelActivitySpinner/**/*.{swift}"
 
