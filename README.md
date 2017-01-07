@@ -66,7 +66,7 @@ platform :ios, '9.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'ButtonAndLabelActivitySpinner', '~> 1.0'
+    pod 'ButtonAndLabelActivitySpinner', '~> 0.1.2'
 end
 ```
 
