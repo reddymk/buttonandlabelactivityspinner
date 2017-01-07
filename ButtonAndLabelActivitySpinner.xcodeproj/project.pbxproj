@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		139C77121E216AE50074F6F3 /* ButtonAndLabelActivitySpinner.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 139C77101E216AE50074F6F3 /* ButtonAndLabelActivitySpinner.podspec */; };
+		139C77131E216AE50074F6F3 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 139C77111E216AE50074F6F3 /* LICENSE */; };
 		13D23C421D7D019500EC4B3D /* ButtonAndLabelActivitySpinner.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D23C411D7D019500EC4B3D /* ButtonAndLabelActivitySpinner.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13D23C4A1D7D025300EC4B3D /* LabelActivitySpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D23C491D7D025300EC4B3D /* LabelActivitySpinner.swift */; };
 		13D23C4C1D7DE03F00EC4B3D /* ButtonActivitySpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D23C4B1D7DE03F00EC4B3D /* ButtonActivitySpinner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		139C77101E216AE50074F6F3 /* ButtonAndLabelActivitySpinner.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ButtonAndLabelActivitySpinner.podspec; sourceTree = SOURCE_ROOT; };
+		139C77111E216AE50074F6F3 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		13D23C3E1D7D019500EC4B3D /* ButtonAndLabelActivitySpinner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ButtonAndLabelActivitySpinner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13D23C411D7D019500EC4B3D /* ButtonAndLabelActivitySpinner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonAndLabelActivitySpinner.h; sourceTree = "<group>"; };
 		13D23C431D7D019500EC4B3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,8 +56,10 @@
 			children = (
 				13D23C411D7D019500EC4B3D /* ButtonAndLabelActivitySpinner.h */,
 				13D23C491D7D025300EC4B3D /* LabelActivitySpinner.swift */,
-				13D23C431D7D019500EC4B3D /* Info.plist */,
 				13D23C4B1D7DE03F00EC4B3D /* ButtonActivitySpinner.swift */,
+				13D23C431D7D019500EC4B3D /* Info.plist */,
+				139C77101E216AE50074F6F3 /* ButtonAndLabelActivitySpinner.podspec */,
+				139C77111E216AE50074F6F3 /* LICENSE */,
 			);
 			path = ButtonAndLabelActivitySpinner;
 			sourceTree = "<group>";
@@ -96,11 +102,12 @@
 		13D23C351D7D019500EC4B3D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = KMR;
 				TargetAttributes = {
 					13D23C3D1D7D019500EC4B3D = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -126,6 +133,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				139C77131E216AE50074F6F3 /* LICENSE in Resources */,
+				139C77121E216AE50074F6F3 /* ButtonAndLabelActivitySpinner.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,8 +167,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -182,7 +193,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -207,8 +218,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -225,9 +238,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -239,6 +253,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -250,6 +265,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -257,6 +273,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -267,6 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = swiftisawesome.ButtonAndLabelActivitySpinner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -289,6 +307,7 @@
 				13D23C481D7D019500EC4B3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

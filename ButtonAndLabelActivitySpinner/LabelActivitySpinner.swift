@@ -8,9 +8,14 @@
 
 import UIKit
 
-@IBDesignable public class LabelActivitySpinner: UILabel {
+
+///Label that can display activity spinner in place of text to indicate that request is being processed.
+@IBDesignable open class LabelActivitySpinner: UILabel {
     
-    public var activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .Gray) {
+    /**
+     Activity indicator which is default UIActivity Indicator.
+    */
+    open var activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray) {
         didSet {
             setNeedsLayout()
         }
@@ -27,24 +32,34 @@ import UIKit
         initialiseView()
     }
     
-    private func initialiseView() {
+    ///Initialises the View
+    fileprivate func initialiseView() {
         addSubview(activityIndicator)
     }
     
-    override public func layoutSubviews() {
+    ///Layout subviews which takes care of activityindicator and label frames.
+    override open func layoutSubviews() {
         super.layoutSubviews()
         activityIndicator.frame = bounds
     }
-
-    public func startAnimating() {
-        textColor = textColor.colorWithAlphaComponent(0)
-        activityIndicator.hidden = false
+    
+    /**
+     startAnimating will remove the text from the label,
+     Unhide the activityIndicator and start animating the activity indicator.
+    */
+    open func startAnimating() {
+        textColor = textColor.withAlphaComponent(0)
+        activityIndicator.isHidden = false
         activityIndicator.startAnimating()
     }
     
-    public func stopAnimating() {
-        textColor = textColor.colorWithAlphaComponent(1)
-        activityIndicator.hidden = true
+    /**
+     stopAnimating will bring back the text color and,
+     Hide the activityIndicator and stop animating the activity indicator. 
+    */
+    open func stopAnimating() {
+        textColor = textColor.withAlphaComponent(1)
+        activityIndicator.isHidden = true
         activityIndicator.stopAnimating()
     }
 
