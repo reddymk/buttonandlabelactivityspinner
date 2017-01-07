@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 ///Button that can display activity spinner in place of text to indicate that request is being processed.
-@IBDesignable public class ButtonActivitySpinner: UIButton {
+@IBDesignable open class ButtonActivitySpinner: UIButton {
     
     var text: String = "" {
         didSet {
@@ -23,7 +23,7 @@ import UIKit
     /**
      Activity indicator which is default UIActivity Indicator.
      */
-    public var activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .Gray) {
+    open var activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray) {
         didSet {
             setNeedsLayout()
         }
@@ -40,14 +40,14 @@ import UIKit
     }
     
     ///Initialises the View
-    private func initialiseView() {
+    fileprivate func initialiseView() {
         addSubview(activityIndicator)
         setNeedsLayout()
         
     }
     
     ///Layout subviews which takes care of activityindicator and label frames.
-    public override func layoutSubviews() {
+    open override func layoutSubviews() {
         super.layoutSubviews()
         activityIndicator.frame = bounds
     }
@@ -56,8 +56,8 @@ import UIKit
      startAnimating will set the text to nil,
      start animating the activity indicator.
      */
-    public func startAnimating() {
-        setTitle("", forState: UIControlState.Normal)
+    open func startAnimating() {
+        setTitle("", for: UIControlState())
         activityIndicator.startAnimating()
     }
     
@@ -65,8 +65,8 @@ import UIKit
      stopAnimating will set back the original text,
      stop animating the activity indicator.
      */
-    public func stopAnimating() {
-        setTitle(text, forState: UIControlState.Normal)
+    open func stopAnimating() {
+        setTitle(text, for: UIControlState())
         activityIndicator.stopAnimating()
     }
 }

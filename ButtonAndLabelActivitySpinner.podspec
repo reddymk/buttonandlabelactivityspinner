@@ -6,7 +6,7 @@ s.name = "ButtonAndLabelActivitySpinner"
 s.summary = "Button and Label with Activity Spinner"
 s.requires_arc = true
 
-s.version = "0.1.1"
+s.version = "0.1.2"
 
 s.license = { :type => "MIT", :file => "LICENSE" }
 
